@@ -1,0 +1,12 @@
+# データベース接続設定
+DATABASE_URL=postgres://user:password@db:7432/app_db
+
+# API サーバー設定
+PORT=8080
+HOST=0.0.0.0
+
+# ログレベル設定
+RUST_LOG=info
+
+# デバッグモード (development/production)
+APP_ENV=development

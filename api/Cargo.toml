@@ -1,0 +1,17 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+axum = "0.7.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenvy = "0.15"
+pgvector = { version = "0.4", features = ["postgres"] }
+tokio-postgres = { version = "0.7", features = ["with-uuid-0_8"] }
+bb8 = "0.7"
+bb8-postgres = "0.7"
+tower-http = { version = "0.5.2", features = ["cors"] }
+hyper = { version = "1.4.1", features = ["full"] }
